@@ -115,8 +115,6 @@ console.log(producto);
 const productosContainer = document.querySelector(".productos-container");
 
 const cardsAHtml = (array) => {
-  // generar la lógica que desarrolle las tarjetas (nodos html)
-
   const cards = array.reduce((acc, element) => {
     return (
       acc +
@@ -133,7 +131,6 @@ const cardsAHtml = (array) => {
     );
   }, "");
 
-  // generar que se impacten estas tarjetas en el DOM con innerHTML
   productosContainer.innerHTML = productosContainer;
 };
 
