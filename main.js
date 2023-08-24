@@ -112,28 +112,6 @@ const producto = [
 
 console.log(producto);
 
-const productosContainer = document.querySelector(".productos-container");
-
-const cardsAHtml = (array) => {
-  const cards = array.reduce((acc, element) => {
-    return (
-      acc +
-      `
-        <div class="card" id="card-${element.id}">      
-            <h2>
-                ${element.producto}
-            </h2>
-            <figure class="productos-container">
-                <img src=${element.imagen} alt="imagen del Suplemento">
-            </figure>
-        </div>
-    `
-    );
-  }, "");
-
-  productosContainer.innerHTML = productosContainer;
-};
-
 const productoContainer = document.querySelector(".productos-container");
 console.log(productoContainer);
 
